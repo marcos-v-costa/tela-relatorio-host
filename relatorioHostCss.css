@@ -98,11 +98,18 @@ body {
 
 .content header {
   display: flex;
-  justify-content: center;
   align-items: center;
+  flex-direction: column;
   min-height: 9%;
-  max-width: 40%;
   margin-bottom: 25px;
+  width: 80%;
+}
+
+.header-text {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .content header h2 {
@@ -132,6 +139,10 @@ body {
   font-weight: 600;
 }
 
+.info h4 {
+  margin-left: 1.5px;
+}
+
 .info p {
   font-family: "Montserrat";
   font-weight: 600;
@@ -141,6 +152,20 @@ body {
 .info img {
   width: 14px;
   height: 14px;
+}
+
+.match-description {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.match-description div {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 5px;
+  margin-left: 3px;
 }
 
 .results {
@@ -197,13 +222,23 @@ body {
 }
 
 .result {
-  border: 3px solid #cfcfcf;
+  border: 2px solid #cfcfcf;
   border-radius: 6px;
   display: flex;
   flex-direction: row;
-  padding: 8px;
+  padding: 10px;
   gap: 10px;
   width: 100%;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+.result div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
 }
 
 .result .percentage {
@@ -211,6 +246,7 @@ body {
   text-align: center;
   font-weight: 600;
   font-size: 16px;
+  color: black;
 }
 
 .result span {
@@ -219,7 +255,7 @@ body {
 
 .result img {
   height: 100%;
-  width: 15%;
+  width: 11%;
 }
 
 .checkmark {
